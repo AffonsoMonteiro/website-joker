@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+        <div class="toggle"><img src="img/toggle.png" alt=""></div>
+    </header>
+
+    <div class="banner">
+        <div class="content">
+            <h2>PUT ON A <span>HAPPY</span> FACE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloremque nam rerum magni molestias minus quod iusto, earum unde, provident, sit minima repellat vitae vero porro cumque at in accusamus?</p>
+            <a href="#" class="play" onclick="toggle()"><img src="img/play.png" alt="Play">WATCH TRAILER </a>
+            <div class="slide"></div>
+                <ul class="sci">
+                    <li><a href="#">  <img src="img/facebook.png" alt="facebook">  </a></li>
+                    <li><a href="#">  <img src="img/twitter.png" alt="twitter">  </a></li>
+                    <li><a href="#">  <img src="img/instagram.png" alt="instagram">  </a></li>
+                </ul>
+            </div>
+    
+    </div>
+
+    <div class="trailer">
+        <iframe src="https://www.youtube.com/embed/kFCvoTe7huk" frameborder="0"></iframe>>
+        <img src="img/close.png" alt="fechar" class="close" onclick="toggle()">
+    </div>
+
+    <script>
+        function toggle() {
+            let trailer = document.querySelector('.trailer')
+            trailer.classList.toggle('active')    
+        }
+    </script>
+</body>
+</html>
